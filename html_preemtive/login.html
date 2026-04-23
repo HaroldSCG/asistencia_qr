@@ -43,7 +43,7 @@
                             <div class="underline"></div>
                         </div>
                         <div class="button-container">
-                            <button class="button1">Iniciar sesión</button>
+                            <button class="button1" id="login-button" type="button">Iniciar sesión</button>
                         </div>
                     </div>
             </div>
@@ -73,6 +73,12 @@
 toggle.style.maskImage = isHidden
     ? 'url("../svg/eye-slash.svg")'
     : 'url("../svg/eye-fill.svg")';
+    });
+
+    const loginButton = document.getElementById("login-button");
+
+    loginButton.addEventListener("click", () => {
+        window.location.href = "dashboard.html";
     });
 </script>
 <script src="anim.js"></script>

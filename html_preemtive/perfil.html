@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | ITV-System</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="post-login.css">
+</head>
+<body>
+    <canvas></canvas>
+
+    <div class="page">
+        <div class="shell">
+            <aside class="sidebar">
+                <div class="brand">
+                    <h1>ITV-System.</h1>
+                    <p>Panel operativo</p>
+                </div>
+
+                <nav class="menu">
+                    <a class="menu-link" href="dashboard.html">Dashboard</a>
+                    <a class="menu-link" href="inspecciones.html">Inspecciones</a>
+                    <a class="menu-link" href="perfil.html">Perfil y ajustes</a>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <span class="status-pill">Sesión activa</span>
+                    <a class="logout-link" href="login.html">Cerrar sesión</a>
+                </div>
+            </aside>
+
+            <main class="content">
+                <header class="header">
+                    <div>
+                        <h2>Perfil y ajustes</h2>
+                        <p>Configura tu cuenta y preferencias de visualización.</p>
+                    </div>
+                </header>
+
+                <section class="grid">
+                    <article class="card span-12">
+                        <h3>Perfil del operador</h3>
+                        <div class="profile-grid">
+                            <div class="avatar">OI</div>
+                            <div>
+                                <p>Usuario principal para el panel de inspecciones.</p>
+                                <div class="profile-fields">
+                                    <div class="field">
+                                        <span class="field-label">Nombre</span>
+                                        <span class="field-value">Operador ITV</span>
+                                    </div>
+                                    <div class="field">
+                                        <span class="field-label">Rol</span>
+                                        <span class="field-value">Supervisor</span>
+                                    </div>
+                                    <div class="field">
+                                        <span class="field-label">Correo</span>
+                                        <span class="field-value">operador@itv-system.local</span>
+                                    </div>
+                                    <div class="field">
+                                        <span class="field-label">Turno</span>
+                                        <span class="field-value">Mañana</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card span-6">
+                        <h3>Preferencias</h3>
+                        <ul class="task-list">
+                            <li>Idioma del panel <span class="chip ready">Español</span></li>
+                            <li>Tema visual <span class="chip review">Claro</span></li>
+                            <li>Alertas por correo <span class="chip ready">Activas</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="card span-6">
+                        <h3>Acciones rápidas</h3>
+                        <p>Modifica la configuración general de tu cuenta.</p>
+                        <div class="actions">
+                            <button class="btn primary" type="button">Editar perfil</button>
+                            <button class="btn secondary" type="button">Cambiar contraseña</button>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="anim.js"></script>
+    <script src="post-login.js"></script>
+</body>
+</html>
