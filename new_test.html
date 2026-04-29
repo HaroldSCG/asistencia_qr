@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsive</title>
+
+    <!-- 🔗 CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- 🔝 NAVBAR -->
+<div class="navbar">
+    <span class="menu-btn" onclick="toggleMenu()">☰</span>
+    <h2>Mi App</h2>
+</div>
+
+<!-- 📱 SIDEBAR -->
+<div id="sidebar" class="sidebar">
+    <a href="#">Inicio</a>
+    <a href="#">Usuarios</a>
+    <a href="#">Configuración</a>
+</div>
+
+<!-- 📄 CONTENIDO -->
+<div id="content" class="content">
+    <h1>Dashboard</h1>
+    <p>Contenido principal aquí.</p>
+</div>
+
+<!-- 🔻 FOOTER -->
+<div class="footer">
+    <p>© 2026 Mi Proyecto</p>
+</div>
+
+<!-- ⚙️ JS -->
+<script>
+function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
