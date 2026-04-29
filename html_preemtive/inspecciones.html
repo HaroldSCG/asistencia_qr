@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITV System - Inspecciones</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="post-login.css">
+</head>
+<body>
+    <canvas></canvas>
+
+    <div class="page">
+        <div class="shell">
+            <aside class="sidebar">
+                <div class="brand">
+                    <h1>ITV-System.</h1>
+                    <p>Panel de operación</p>
+                </div>
+
+                <nav class="menu">
+                    <a class="menu-link" href="dashboard.html">Inicio</a>
+                    <a class="menu-link" href="inspecciones.html">Inspecciones</a>
+                    <a class="menu-link" href="perfil.html">Ajustes</a>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <span class="status-pill">Operativo</span>
+                    <a class="logout-link" href="login.html">Cerrar sesión</a>
+                </div>
+            </aside>
+
+            <main class="content">
+                <header class="header">
+                    <div>
+                        <h2>Cola de inspecciones</h2>
+                        <p>Gestiona el estado de cada vehículo en revisión.</p>
+                    </div>
+                    <span class="badge">Turno mañana</span>
+                </header>
+
+                <section class="grid">
+                    <article class="card span-4">
+                        <h3>Pendientes</h3>
+                        <p class="metric">14</p>
+                    </article>
+                    <article class="card span-4">
+                        <h3>En proceso</h3>
+                        <p class="metric">6</p>
+                    </article>
+                    <article class="card span-4">
+                        <h3>Finalizadas hoy</h3>
+                        <p class="metric">27</p>
+                    </article>
+
+                    <article class="card span-12">
+                        <h3>Detalle de inspecciones</h3>
+                        <ul class="task-list">
+                            <li>
+                                <span>ABC-123 - Particular - L. Mendez</span>
+                                <span class="chip pending">Pendiente</span>
+                            </li>
+                            <li>
+                                <span>JTR-834 - Transporte - R. Sosa</span>
+                                <span class="chip review">En proceso</span>
+                            </li>
+                            <li>
+                                <span>LMN-998 - Carga - K. Ruiz</span>
+                                <span class="chip ready">Finalizada</span>
+                            </li>
+                            <li>
+                                <span>FTD-448 - Particular - A. Rivas</span>
+                                <span class="chip pending">Pendiente</span>
+                            </li>
+                        </ul>
+                        <div class="actions">
+                            <button class="btn primary" type="button">Nueva inspección</button>
+                            <button class="btn secondary" type="button">Exportar reporte</button>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="post-login.js"></script>
+    <script src="anim.js"></script>
+</body>
+</html>

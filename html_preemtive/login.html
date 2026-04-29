@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+
+<canvas></canvas>
+
+<div class="main-container">
+
+    <div class="box box1">
+
+        <div class="box box2">
+            <div class="box box3">
+                <div class="box box4">
+                    <div class="box box5">
+                        <img src="/images/itv_proto2.png" alt="itv">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="box_a">
+                <div class="tittle-container">
+                    <h1 class="title1">ITV-System.</h1>   
+                    <h1 class="title2">.Inicia sesión para continuar.</h1>
+                </div>
+                <div class="form">
+                        <div class="input-container">
+                            <input type="text" required>
+                            <label>Usuario</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="input-container password-container">
+                            <input type="password" required>
+                            <label>Contraseña</label>
+                            <span class="toggle-password"></span>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="button-container">
+                            <button class="button1" id="login-button" type="button">Iniciar sesión</button>
+                        </div>
+                    </div>
+            </div>
+
+    </div>
+
+    <!-- Otro contenedor decorativo -->
+
+    <div class="glass"></div>
+
+</div>
+
+</body>
+<script>
+    const toggle = document.querySelector(".toggle-password");
+    const input = document.querySelector("input[type='password']");
+
+    toggle.addEventListener("click", () => {
+        const isHidden = input.type === "password";
+
+        input.type = isHidden ? "text" : "password";
+
+        toggle.style.webkitMaskImage = isHidden
+    ? 'url("../svg/eye-slash.svg")'
+    : 'url("../svg/eye-fill.svg")';
+
+toggle.style.maskImage = isHidden
+    ? 'url("../svg/eye-slash.svg")'
+    : 'url("../svg/eye-fill.svg")';
+    });
+
+    const loginButton = document.getElementById("login-button");
+
+    loginButton.addEventListener("click", () => {
+        window.location.href = "dashboard.html";
+    });
+</script>
+<script src="anim.js"></script>
+</html>
