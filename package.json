@@ -4,7 +4,8 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "dev:local": "vite --host 127.0.0.1 --port 5174 --strictPort"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",
